@@ -1,0 +1,87 @@
+:root {
+    --work-bg: #ba4949;
+    --short-bg: #38858a;
+    --long-bg: #397097;
+    --current-bg: var(--work-bg);
+}
+
+body {
+    font-family: 'Arial Rounded MT Bold', 'Helvetica', sans-serif;
+    background-color: var(--current-bg);
+    transition: background-color 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    width: 350px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.mode-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.mode-btn {
+    background: none;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.mode-btn.active {
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    font-weight: bold;
+}
+
+.timer-display {
+    font-size: 90px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.btn-start {
+    background: white;
+    color: var(--current-bg);
+    border: none;
+    padding: 15px 50px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 5px 0 #ddd;
+    transition: 0.1s;
+    width: 100%;
+}
+
+.btn-start:active {
+    transform: translateY(4px);
+    box-shadow: none;
+}
+
+.btn-reset {
+    margin-top: 20px;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+}
